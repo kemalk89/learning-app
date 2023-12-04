@@ -13,6 +13,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -21,10 +27,11 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@media screen and (min-width:1024px) {
+  main { 
+    width: 1024px;
+    margin: auto;
+  }
 }
 
 /* animations */
@@ -48,6 +55,14 @@
   margin-top: calc(var(--base-spacing) * 3);
 }
 
+.u-mt-4 {
+  margin-top: calc(var(--base-spacing) * 4);
+}
+
+.u-ml-8 {
+  margin-left: calc(var(--base-spacing) * 8);
+}
+
 .u-p-1 {
   padding: var(--base-spacing);
 }
@@ -62,6 +77,14 @@
 
 .u-flex {
   display: flex;
+}
+
+.u-justify-center {
+  justify-content: center;
+}
+
+.u-justify-end {
+  justify-content: end;
 }
 
 /* app-specific styles */

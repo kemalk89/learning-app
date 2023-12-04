@@ -21,14 +21,6 @@
     display: flex;
 }
 
-.taskContainer {
-    font-size: 2rem;
-}
-
-.taskContainer input {
-    width: 100px;
-}
-
 .operator {
     text-align: left;
 }

@@ -1,3 +1,11 @@
-.box {
+.task-container {
+    font-size: 2rem;
+}
 
+.task-container input {
+    width: 100px;
+}
+
+.current-task {
+    width: 700px;
 }

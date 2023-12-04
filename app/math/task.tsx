@@ -125,7 +125,7 @@ export const Task = () => {
     }
 
     return (
-        <div className={styles.taskContainer}>
+        <div className="task-container">
             <div>
                 Modus:
                 <button
@@ -148,14 +148,21 @@ export const Task = () => {
                     onClick={() => setDifficultyLevel('hard')}>Schwer</button>
             </div>
 
-            <div className="u-mt-3 u-flex">
-                {renderTask()}
-                {renderEmoji()}
+            <div className="u-mt-4 u-flex u-justify-center">
+                <div className="u-flex">
+                    {renderTask()}
+
+                    <div className="u-ml-8">
+                        {renderEmoji()}
+                    </div>
+                </div>
             </div>
 
-            <button className="btn-primary u-mt-3" onClick={validate} disabled={emojiType !== 'thinking'}>
-                Weiter
-            </button>
+            <div className="u-flex u-justify-end">
+                <button className="btn-primary u-mt-3" onClick={validate} disabled={emojiType !== 'thinking'}>
+                    Weiter
+                </button>
+            </div>
         </div>
     );
 };

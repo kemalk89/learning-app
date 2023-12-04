@@ -9,11 +9,6 @@ export default function MathPage() {
             <div className="u-mt-2">
                 <Task />
             </div>
-            <div className="">
-
-            </div>
-            <EmojiOwl className="u-text-8xl" />
-            <EmojiFlag className="u-text-8xl" />
         </>
     );
 }

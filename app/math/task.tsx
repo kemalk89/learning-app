@@ -79,6 +79,7 @@ export const Task = () => {
                 type="number"
                 className={isValid === false ? 'input-invalid' : ''}
                 value={inputResult}
+                onFocus={() => setInputResult("")}
                 onChange={(e) => setInputResult(e.target.value)} />
         );
     }

@@ -24,3 +24,18 @@
 .operator {
     text-align: left;
 }
+
+.optionRow {
+    display: flex;
+
+    .optionLabel {
+        width: 350px;
+    }
+}
+
+.taskContainer {
+    border: 1px solid rgb(140, 139, 139);
+    border-radius: 10px;
+    padding: 50px 0px;
+    font-size: 3rem;
+}
